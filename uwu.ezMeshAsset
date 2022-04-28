@@ -2,19 +2,16 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{15747003732749421954,5116826331007680196}}
+	Uuid %id{u4{1795095594725111441,5286359524997638040}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
 	p
 	{
-		s %AssetType{"Animated Mesh"}
-		VarArray %Dependencies
-		{
-			s{"uwu.glb"}
-		}
-		Uuid %DocumentID{u4{15747003732749421954,5116826331007680196}}
-		u4 %Hash{12499393533467061555}
+		s %AssetType{"Mesh"}
+		VarArray %Dependencies{}
+		Uuid %DocumentID{u4{1795095594725111441,5286359524997638040}}
+		u4 %Hash{1084265099640255633}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -25,19 +22,31 @@ Objects
 {
 o
 {
-	Uuid %id{u4{9757011302973934466,5439476652449852516}}
-	s %t{"ezAnimatedMeshAssetProperties"}
-	u3 %v{2}
+	Uuid %id{u4{12916934283698069649,5306982566197152523}}
+	s %t{"ezMeshAssetProperties"}
+	u3 %v{3}
 	p
 	{
-		s %DefaultSkeleton{""}
+		Angle %Angle{f{0xDC0FC940}}
+		b %Cap{1}
+		b %Cap2{1}
+		u2 %Detail{0}
+		u2 %Detail2{0}
+		b %FlipForwardDir{0}
+		f %Height{0x0000803F}
 		b %ImportMaterials{1}
 		VarArray %Materials{}
 		s %MeshFile{"uwu.glb"}
-		s %NormalPrecision{"ezMeshNormalPrecision::_32Bit"}
+		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
+		s %PrimitiveType{"ezMeshPrimitive::Box"}
+		f %Radius{0x0000003F}
+		f %Radius2{0x0000003F}
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
+		s %RightDir{"ezBasisAxis::PositiveX"}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
+		f %UniformScaling{0x0000803F}
+		s %UpDir{"ezBasisAxis::PositiveY"}
 	}
 }
 o
@@ -50,7 +59,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{9757011302973934466,5439476652449852516}}
+			Uuid{u4{12916934283698069649,5306982566197152523}}
 		}
 	}
 }
@@ -59,7 +68,25 @@ Types
 {
 o
 {
-	Uuid %id{u4{9735983355844992176,7654398404563011307}}
+	Uuid %id{u4{3975990526721687754,926589309994965004}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshPrimitive"}
+		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{5578311699685810862,3953450409323753049}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
@@ -70,9 +97,9 @@ o
 		s %ParentTypeName{"ezReflectedClass"}
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
-		s %TypeName{"ezAnimatedMeshAssetProperties"}
-		u3 %TypeSize{1256}
-		u3 %TypeVersion{2}
+		s %TypeName{"ezMeshAssetProperties"}
+		u3 %TypeSize{1240}
+		u3 %TypeVersion{3}
 	}
 }
 o
@@ -161,6 +188,24 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
+		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14469700887475489738,16951777026318265606}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezBasisAxis"}
 		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
