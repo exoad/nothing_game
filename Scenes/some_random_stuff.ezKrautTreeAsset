@@ -1,0 +1,130 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{4617263167739639193,5366871802730025766}}
+	s %t{"ezAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Kraut Tree"}
+		VarArray %Dependencies{}
+		Uuid %DocumentID{u4{4617263167739639193,5366871802730025766}}
+		u4 %Hash{7631213832297857254}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %References{}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{17648989727971963038,4813761569036025651}}
+	s %t{"ezKrautTreeAssetProperties"}
+	u3 %v{1}
+	p
+	{
+		u2 %DisplayRandomSeed{0}
+		VarArray %GoodRandomSeeds{}
+		s %KrautFile{""}
+		f %LodDistanceScale{0x0000803F}
+		VarArray %Materials{}
+		f %StaticColliderRadius{0xCDCCCC3E}
+		s %Surface{""}
+		f %TreeStiffness{0x00002041}
+		f %UniformScaling{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"ezDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{17648989727971963038,4813761569036025651}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{9839103660623915170,1447106120747834331}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"ezEditorPluginKraut"}
+		VarArray %Properties{}
+		s %TypeName{"ezKrautAssetMaterial"}
+		u3 %TypeSize{128}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6793836540827978476,3094957657128336037}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"ezEditorPluginKraut"}
+		VarArray %Properties{}
+		s %TypeName{"ezKrautTreeAssetProperties"}
+		u3 %TypeSize{1264}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6089094783765586323,8705960867921430659}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezDocumentRoot"}
+		u3 %TypeSize{72}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{983387834180907111,17935407260904399048}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezReflectedClass"}
+		u3 %TypeSize{8}
+		u3 %TypeVersion{1}
+	}
+}
+}
